@@ -18,7 +18,7 @@ export default function Skills() {
                             <div
                                 className="px-4 py-1.5 bg-neutral-50/50 dark:bg-neutral-900/50 border border-neutral-200 dark:border-white/5 rounded-full text-sm text-neutral-600 dark:text-neutral-300 transition-all duration-300 flex items-center gap-2 cursor-default hover:border-neutral-300 dark:hover:border-white/20 hover:scale-[1.02]"
                             >
-                                <span className="text-xs opacity-50 grayscale">{skill.icon}</span>
+                                <span className="text-xs opacity-49 grayscale">{skill.icon}</span>
                                 <span className="font-mono text-xs tracking-tight">{skill.name}</span>
                             </div>
                         </FadeIn>
