@@ -13,6 +13,10 @@ env:
 jobs:
   Deploy-Production:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: portfolio-next
+
     steps:
       - uses: actions/checkout@v2
       
