@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, Github, ExternalLink } from 'lucide-react';
 import { projects } from '../data/portfolio';
 import { FadeIn, FadeInStagger } from './FadeIn';
 import { motion, useMotionTemplate, useMotionValue } from 'framer-motion';
@@ -45,7 +45,7 @@ function ProjectCard({ project }: { project: typeof projects[0] }) {
                     {project.description}
                 </p>
 
-                <div className="flex flex-wrap gap-1.5">
+                <div className="flex flex-wrap gap-1.5 mb-5">
                     {project.tech.map((tech, techIdx) => (
                         <span
                             key={techIdx}
@@ -54,6 +54,19 @@ function ProjectCard({ project }: { project: typeof projects[0] }) {
                             {tech}
                         </span>
                     ))}
+                </div>
+
+                <div className="flex gap-4">
+                    {project.githubUrl && (
+                        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="text-sm flex items-center gap-1.5 text-neutral-500 hover:text-neutral-900 dark:hover:text-white transition-colors relative z-10">
+                            <Github size={16} /> GitHub
+                        </a>
+                    )}
+                    {project.demoUrl && (
+                        <a href={project.demoUrl} target="_blank" rel="noopener noreferrer" className="text-sm flex items-center gap-1.5 text-neutral-500 hover:text-neutral-900 dark:hover:text-white transition-colors relative z-10">
+                            <ExternalLink size={16} /> Live Demo
+                        </a>
+                    )}
                 </div>
             </div>
         </div>

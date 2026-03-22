@@ -7,6 +7,8 @@ export interface Project {
   name: string;
   description: string;
   tech: string[];
+  githubUrl?: string;
+  demoUrl?: string;
 }
 
 export interface Blog {
@@ -52,17 +54,23 @@ export const projects: Project[] = [
   {
     name: 'Deploy Me',
     description: 'fully managed deployment platform inspired by modern PaaS systems. Enabled GitHub-based artifact uploads stored in Cloudflare R2, managed builds and app state with Redis, and implemented deployment services with subdomain routing using Next.js.',
-    tech: ["JavaScript", "Next.js", "AWS", "Docker", "Redis", "Kafka"]
+    tech: ["JavaScript", "Next.js", "AWS", "Docker", "Redis", "Kafka"],
+    githubUrl: '#',
+    demoUrl: '#'
   },
   {
     name: 'Cloud-Vault',
     description: 'Developed a high-performance Hybrid-Cloud Storage Gateway using Node.js and AWS S3 that reduced data retrieval latency from 200ms to 5ms through intelligent local caching. Engineered a real-time sync and eviction system using AWS SQS and Redis-backed LRU logic to ensure data consistency and automated storage management. Orchestrated the full-stack deployment via Docker Compose to optimize cloud egress costs while maintaining high memory efficiency using Node.js Streams.',
-    tech: ['Node.js', 'Express.js', 'PostgreSQL', 'Redis', 'AWS S3', 'AWS SQS', 'Docker']
+    tech: ['Node.js', 'Express.js', 'PostgreSQL', 'Redis', 'AWS S3', 'AWS SQS', 'Docker'],
+    githubUrl: '#',
+    demoUrl: '#'
   },
   {
     name: 'Multi Threading Web Server',
     description: 'A high-performance, multithreaded HTTP server built from the ground up using Java networking capabilities. It utilizes a custom-configured thread pool to handle concurrent client connections efficiently, bypassing high-level frameworks to demonstrate core TCP/IP communication and request-response lifecycles.',
-    tech: ['Java (Core SDK)', 'Java Networking (Socket, ServerSocket)', 'Java Concurrency (ExecutorService, Thread Pools)', 'HTTP/1.1 Protocol', 'Apache JMeter']
+    tech: ['Java (Core SDK)', 'Java Networking (Socket, ServerSocket)', 'Java Concurrency (ExecutorService, Thread Pools)', 'HTTP/1.1 Protocol', 'Apache JMeter'],
+    githubUrl: '#',
+    demoUrl: '#'
   }
 ];
 
