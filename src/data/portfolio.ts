@@ -25,7 +25,6 @@ export interface Resume {
   experience: {
     role: string;
     company: string;
-    duration: string;
     description: string;
   }[];
 }
@@ -47,27 +46,28 @@ export const skills: Skill[] = [
   { name: 'Docker', icon: '🐋' },
   { name: 'Redis', icon: '⚡' },
   { name: 'AWS', icon: 'a' },
-  { name: 'Kubernetes', icon: '' }
+  { name: 'Kubernetes', icon: '' },
+  { name: 'REST APIs', icon: '🌐' }
 ];
 
 export const projects: Project[] = [
   {
     name: 'Deploy Me',
-    description: 'Engineered a fully managed serverless deployment platform inspired by modern PaaS architectures. Facilitated seamless GitHub-based artifact uploads with scalable storage in Cloudflare R2. Orchestrated robust application state management and build pipelines leveraging Redis, and engineered dynamic deployment routing with custom subdomains using Next.js.',
+    description: 'Built a fully managed serverless PaaS enabling zero-downtime deployments directly from GitHub repositories. Engineered a scalable backend using Next.js and Redis for state orchestration, integrated with Cloudflare R2 for artifact storage, and implemented dynamic custom subdomain routing to deliver a seamless developer experience.',
     tech: ["JavaScript", "Next.js", "AWS", "Docker", "Redis", "Kafka"],
     githubUrl: '#',
     demoUrl: '#'
   },
   {
     name: 'Cloud-Vault',
-    description: 'Architected a high-performance Hybrid-Cloud Storage Gateway utilizing Node.js and AWS S3, slashing data retrieval latency from 200ms to 5ms via intelligent local caching. Implemented a real-time synchronization and eviction engine using AWS SQS and Redis-backed LRU strategies to guarantee data consistency and automated lifecycle management. Containerized the entire stack with Docker Compose to minimize cloud egress costs while optimizing memory consumption through native Node.js Streams.',
+    description: 'Developed a high-availability Hybrid-Cloud Storage Gateway integrating Node.js with AWS S3, reducing data retrieval latency by 97.5% through an intelligent local caching layer. Implemented real-time data synchronization using AWS SQS and Redis-backed LRU eviction, containerized with Docker to optimize cloud egress costs and system throughput.',
     tech: ['Node.js', 'Express.js', 'PostgreSQL', 'Redis', 'AWS S3', 'AWS SQS', 'Docker'],
     githubUrl: '#',
     demoUrl: '#'
   },
   {
     name: 'Multi Threading Web Server',
-    description: 'Designed and implemented a high-throughput, multithreaded HTTP server entirely from scratch utilizing core Java networking APIs. Engineered a custom, highly-optimized thread pool to manage high volumes of concurrent client connections, demonstrating deep expertise in core TCP/IP protocols, socket programming, and low-level request-response lifecycles without relying on high-level frameworks.',
+    description: 'Constructed a highly concurrent, zero-dependency HTTP web server from scratch utilizing core Java networking APIs. Engineered a custom thread pool mechanism for optimal asynchronous request handling, demonstrating mastery of TCP/IP protocols, socket constraints, and low-level architectural design without relying on external frameworks.',
     tech: ['Java (Core SDK)', 'Java Networking (Socket, ServerSocket)', 'Java Concurrency (ExecutorService, Thread Pools)', 'HTTP/1.1 Protocol', 'Apache JMeter'],
     githubUrl: '#',
     demoUrl: '#'
@@ -95,16 +95,9 @@ export const resume: Resume = {
   ],
   experience: [
     {
-      role: "Intern",
+      role: "Upcoming SDE Intern",
       company: "Archer IRM",
-      duration: "July 2026 - Present",
       description: "Working on enterprise risk management, building scalable solutions and contributing to core product features."
-    },
-    {
-      role: "Full Stack Developer Intern",
-      company: "Tech Company",
-      duration: "Jan 2024 - Present",
-      description: "Working on building scalable web applications usng Next.js and Node.js."
     }
   ]
 };

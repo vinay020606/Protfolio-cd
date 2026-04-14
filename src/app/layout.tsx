@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' });
 
 export const metadata: Metadata = {
-  title: 'Nikhil Rajpurohit | Portfolio',
+  title: 'S Vinay | Portfolio',
   description: 'Full-Stack Engineer building web products.',
 };
 

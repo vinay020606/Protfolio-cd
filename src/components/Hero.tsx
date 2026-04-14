@@ -56,14 +56,17 @@ export default function Hero() {
 
                         <div className="flex gap-4 items-center">
                             {[
-                                { icon: FileText, href: '#resume' },
-                                { icon: Linkedin, href: '#' },
-                                { icon: Github, href: '#' },
+                                { icon: FileText, href: '/S_Vinay_Resume.pdf', download: true },
+                                { icon: Linkedin, href: 'https://linkedin.com/' },
+                                { icon: Github, href: 'https://github.com/vinay020606' },
                                 { icon: Mail, href: 'mailto:email@example.com' },
                             ].map((item, idx) => (
                                 <a
                                     key={idx}
                                     href={item.href}
+                                    download={item.download ? true : undefined}
+                                    target={item.href.startsWith('http') ? '_blank' : undefined}
+                                    rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                                     className="w-10 h-10 rounded-lg border border-neutral-200 dark:border-white/10 flex items-center justify-center text-neutral-900 dark:text-white bg-white dark:bg-white/5 hover:bg-neutral-50 dark:hover:bg-white/10 transform hover:scale-110 transition-all duration-200"
                                 >
                                     <item.icon size={18} />

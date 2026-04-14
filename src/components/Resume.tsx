@@ -19,7 +19,6 @@ export default function Resume() {
                                 <span className="absolute -left-[37px] top-1.5 w-2.5 h-2.5 rounded-full bg-neutral-200 dark:bg-neutral-800 ring-4 ring-white dark:ring-neutral-950 group-hover:bg-blue-500 transition-colors duration-300"></span>
                                 <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
                                     <h4 className="text-base font-medium text-neutral-900 dark:text-white">{exp.role}</h4>
-                                    <span className="text-xs font-mono text-neutral-400 dark:text-neutral-500">{exp.duration}</span>
                                 </div>
                                 <p className="text-sm text-neutral-500 dark:text-neutral-400 mb-2 font-medium">{exp.company}</p>
                                 <p className="text-sm leading-relaxed text-neutral-600 dark:text-neutral-400 font-light max-w-2xl">{exp.description}</p>
@@ -49,7 +48,8 @@ export default function Resume() {
 
             <div className="mt-12 pt-8 border-t border-dashed border-neutral-200 dark:border-white/10">
                 <a
-                    href="/resume.pdf"
+                    href="/S_Vinay_Resume.pdf"
+                    download
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors group"
