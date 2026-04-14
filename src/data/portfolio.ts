@@ -53,21 +53,21 @@ export const skills: Skill[] = [
 export const projects: Project[] = [
   {
     name: 'Deploy Me',
-    description: 'fully managed deployment platform inspired by modern PaaS systems. Enabled GitHub-based artifact uploads stored in Cloudflare R2, managed builds and app state with Redis, and implemented deployment services with subdomain routing using Next.js.',
+    description: 'Engineered a fully managed serverless deployment platform inspired by modern PaaS architectures. Facilitated seamless GitHub-based artifact uploads with scalable storage in Cloudflare R2. Orchestrated robust application state management and build pipelines leveraging Redis, and engineered dynamic deployment routing with custom subdomains using Next.js.',
     tech: ["JavaScript", "Next.js", "AWS", "Docker", "Redis", "Kafka"],
     githubUrl: '#',
     demoUrl: '#'
   },
   {
     name: 'Cloud-Vault',
-    description: 'Developed a high-performance Hybrid-Cloud Storage Gateway using Node.js and AWS S3 that reduced data retrieval latency from 200ms to 5ms through intelligent local caching. Engineered a real-time sync and eviction system using AWS SQS and Redis-backed LRU logic to ensure data consistency and automated storage management. Orchestrated the full-stack deployment via Docker Compose to optimize cloud egress costs while maintaining high memory efficiency using Node.js Streams.',
+    description: 'Architected a high-performance Hybrid-Cloud Storage Gateway utilizing Node.js and AWS S3, slashing data retrieval latency from 200ms to 5ms via intelligent local caching. Implemented a real-time synchronization and eviction engine using AWS SQS and Redis-backed LRU strategies to guarantee data consistency and automated lifecycle management. Containerized the entire stack with Docker Compose to minimize cloud egress costs while optimizing memory consumption through native Node.js Streams.',
     tech: ['Node.js', 'Express.js', 'PostgreSQL', 'Redis', 'AWS S3', 'AWS SQS', 'Docker'],
     githubUrl: '#',
     demoUrl: '#'
   },
   {
     name: 'Multi Threading Web Server',
-    description: 'A high-performance, multithreaded HTTP server built from the ground up using Java networking capabilities. It utilizes a custom-configured thread pool to handle concurrent client connections efficiently, bypassing high-level frameworks to demonstrate core TCP/IP communication and request-response lifecycles.',
+    description: 'Designed and implemented a high-throughput, multithreaded HTTP server entirely from scratch utilizing core Java networking APIs. Engineered a custom, highly-optimized thread pool to manage high volumes of concurrent client connections, demonstrating deep expertise in core TCP/IP protocols, socket programming, and low-level request-response lifecycles without relying on high-level frameworks.',
     tech: ['Java (Core SDK)', 'Java Networking (Socket, ServerSocket)', 'Java Concurrency (ExecutorService, Thread Pools)', 'HTTP/1.1 Protocol', 'Apache JMeter'],
     githubUrl: '#',
     demoUrl: '#'
@@ -94,6 +94,12 @@ export const resume: Resume = {
     }
   ],
   experience: [
+    {
+      role: "Intern",
+      company: "Archer IRM",
+      duration: "July 2026 - Present",
+      description: "Working on enterprise risk management, building scalable solutions and contributing to core product features."
+    },
     {
       role: "Full Stack Developer Intern",
       company: "Tech Company",
